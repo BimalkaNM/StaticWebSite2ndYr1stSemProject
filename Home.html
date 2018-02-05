@@ -1,0 +1,260 @@
+<html>
+<head>
+  <link href="UTripSrilanka.ico" />
+	<title>U Visit Sri Lanka</title>
+  <link rel="stylesheet" href="styleSheet.css" />
+</head>
+<body onload="myFunction()">
+<div id="loader"></div>
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("container").style.display = "block";
+}
+</script>
+ <button onclick="topFunction()" id="myBtn" title="Go to top"><b>Top</b></button>
+ <script>
+ // When the user scrolls down 20px from the top of the document, show the button
+ window.onscroll = function() {scrollFunction()};
+
+ function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+ }
+
+ // When the user clicks on the button, scroll to the top of the document
+ function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+ }
+ </script>
+ <div style="display:none;" id="container">
+  <div class="header"> 
+   <div class="logo">
+    <img src="UTripSrilanka.png" alt="logo" style="width:95%;height:150px;">
+   </div>
+   <div class="menubar">
+    <input type="button" value="Home" >
+    <input type="button" value="About Us">
+    <input type="button" value="Contact Us">
+    </div>
+   <div class="searchbar">
+    <h2 style="text-align:center; color:blue;margin:0px;">TOURISM HOTLINE : 1912</h2>
+    <p style="text-align:center;color:red;font-size:25px;margin:10px;"><b>"WE  CARE  ALWAYS..."</b></p>
+    <input type="text" name="search" placeholder="Search.." >(Only dial within Sri lanka)
+   </div>
+  </div>
+  <div class="slideimage">
+   <div class="mySlides">
+    <div class="caption">
+     <b style="margin-top:0px;">Sigiriya</b>
+    </div>
+    <img src="sigiriya.jpg" style="width:100%;height:402px;">
+  </div>
+  <div class="mySlides">
+   <div class="caption">
+     <b style="margin-top:0px;">Temple Of Tooth-Kandy</b>
+   </div>
+    <img src="daladaperahera.jpg" style="width:100%;height:402px;">
+    </div>
+  <div class="mySlides">
+   <div class="caption">
+     <b style="margin-top:0px;">Yala National Park</b>
+   </div>
+    <img src="yalapark.jpg" style="width:100%;height:402px;">
+   </div>
+   <div class="mySlides">
+    <div class="caption">
+     <b style="margin-top:0px;">Arugambe Beach</b>
+    </div>
+    <img src="Arugambay.jpg" style="width:100%;height:402px;">
+   </div>
+  <div class="mySlides">
+    <div class="caption">
+     <b style="margin-top:0px;">Ella Rock</b>
+    </div>
+    <img src="ellarock.jpg" style="width:100%;height:402px;">
+   </div>
+  <div class="mySlides">
+   <div class="caption">
+     <b style="margin-top:0px;">Sri Maha Bodhi-Anuradapura</b>
+   </div>
+    <img src="anuradapura.jpg" style="width:100%;height:400px;">
+   </div>
+   <script>
+   var myIndex = 0;
+   carousel();
+
+   function carousel() {
+     var i;
+     var x = document.getElementsByClassName("mySlides");
+     for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+     }
+     myIndex++;
+     if (myIndex > x.length) {myIndex = 1}    
+     x[myIndex-1].style.display = "block";  
+     setTimeout(carousel, 3500); // Change image every 2 seconds
+    }
+   </script>
+   <div class="socialmediabar">
+    <a href=""><img src="facebook.jpg" alt="facebook" title="facebook" style="width:100%";height:"60px";></a>
+    <a href=""><img src="twitter.jpg" alt="twitter" title="twitter"  style="width:100%";height:"60px";></a>
+    <a href=""><img src="instagram.png" alt="instagram" title="instagram" style="width:100%";height:"60px";></a>
+    <a href=""><img src="youtube.jpg" alt="youtube" title="youtube" style="width:100%";height:"60px";></a>
+    <a href=""><img src="flickr.jpg" alt="flickr" title="flickr" style="width:100%";height:"60px";></a>
+   </div>
+  </div>
+  <div class='nav'>
+  <div class="dropdown">
+   <button class="dropbtn"><b>Explore</b></button>
+    <div class='dropdown-content'>
+     <a href=''>Sri Lankan Legend</a>
+     <a href=''>Sri Lankan Heritage</a>
+     <a href=''>Provincial Tourism</a>
+    </div>
+    </div>
+    <div class="dropdown">
+   <button class="dropbtn"><b>See & Do</b></button>
+    <div class='dropdown-content'>
+     <a href=''>Beach Holidays</a>
+     <a href=''>Adventure Tours</a>
+     <a href=''>Scenic Beauty</a>
+    </div>
+    </div>
+    <div class="dropdown">
+   <button class="dropbtn"><b>Travel Essentials</b></button>
+    <div class='dropdown-content'>
+     <a href=''>Visa Services</a>
+     <a href=''>Plan Your Trip</a>
+     <a href=''>Travel Agencies</a>
+    </div>
+    </div>
+    <div class="dropdown">
+   <button class="dropbtn"><b>Stay</b></button>
+    <div class='dropdown-content'>
+     <a href=''>Hotels & Accomadations</a>
+     <a href=''>Newly Registered</a>
+     <a href=''>National Holiday Resorts</a>
+    </div>
+    </div>
+    <div class="dropdown">
+   <button class="dropbtn"><b>Services</b></button>
+    <div class='dropdown-content'>
+     <a href=''>Online Services</a>
+     <a href=''>Plan Your Trip</a>
+     <a href=''>E-Brochures</a>
+    </div>
+   </div>
+  </div>
+  <div class="section">
+   <div class="section1">
+    <div class="caption1">
+     <center><p>HERITAGE</p></center>
+   </div>
+     <a href="sigiriya.html"><img src="sigiriya.jpg" alt="HERITAGE" title="HERITAGE" style="width:100%;height:50%;"></img></a>
+     <p>Sigiriya - "Eighth Wonder of World" Enter a time when men tamed the rocks, filled oceans & built cities in the sky</p>
+   </div>
+   <div class="section2">
+    <div class="caption2">
+     <center><p>WILD</p></center>
+   </div>
+        <a href="yala.html"><img src="yala.jpg" alt="WILD" title="WILD" style="width:100%;height:50%;"></img></a>
+        <p>Yala - "The highest density of leopards in the world" A wild and untamed Sri Lanka filled with natural wonders</p>
+   </div>
+   <div class="section3">
+    <div class="caption3">
+     <center><p>SCENIC</p></center>
+   </div>
+   <a href="ceylontea.html"><img src="ceylontea.jpg" alt="SCENIC" title="SCENIC" style="width:100%;height:50%;"></img></a>
+   <p>Ceylon Tea - "The World's first ethical Tea produce" Discover a country filled with the essence of a paradise</p>
+   </div>
+   <div class="section4">
+    <div class="caption4">
+     <center><p>FESTIVE</p></center>
+   </div>
+   <a href="Kandy-perahera.html"><img src="daladaperahera.jpg" alt="FESTIVE" title="FESTIVE" style="width:100%;height:50%;"></img></a>
+   <p> <p>Nuwara Perahera - "The grand pageant of Asia" Dive into the colors, sounds and lights</p></p>
+   </div>
+   <div class="section5">
+    <div class="caption5">
+     <center><p>THRILLS</p></center>
+   </div>
+     <a href="Arugambay.html"><img src="Arugambay.jpg" alt="THRILLS" title="THRILLS" style="width:100%;height:50%;"></img></a>
+     <p>Arugambay - "The surfing capital of the world" Adventures from the tops of the mountains to the depths of the oceans</p>
+   </div>
+   <div class="section6">
+    <div class="caption6">
+     <center><p>PRISTINE</p></center>
+   </div>
+     <a href="unawatuna.html"><img src="unawatuna.jpg" alt="PRISTINE" title="PRISTINE" style="width:100%;height:50%;"></img></a>
+     <p>Unawatuna - "The World's best beaches - National Geographic" Golden beaches a washed with aquamarine waves & eternal sunshine</p>
+   </div>
+   <div class="section7">
+    <div class="caption7">
+     <center><p>UNCOMMON</p></center>
+   </div>
+     <a href="bomburuella.html"><img src="bomburuella.jpg" alt="UNCOMMON" title="UNCOMMON" style="width:100%;height:50%;"></img></a>
+     <p>Bomburu Ella - "also known as Perawella Falls, is a waterfall at Uva-Paranagama Divisional Secretariat of Sri Lanka. It is located near the border of Nuwara Eliya ."</p>
+   </div>
+   <div class="section8">
+    <div class="caption8">
+     <center><p>HIKING</p></center>
+   </div>
+     <a href="ellarock.html"><img src="ellarock.jpg" alt="HIKING" title="HIKING" style="width:100%;height:50%;"></img></a>
+     <p>Ella - "pure natural beauty, with its waterfalls, greenery, and hills it is just jaw-dropping. Ella is the perfect ... Ella rock might be a long way up but it's worth all the struggle..".</p>
+   </div>
+   <div class="section9">
+    <div class="caption9">
+     <center><p>ESSENCE</p></center>
+   </div>
+     <a href=""><img src="diament.jpg" alt="ESSENCE" title="ESSENCE" style="width:100%;height:50%;"></img></a>
+     <p>Sri Lanka is an island of inherited to glamorous gemstones.</p>
+   </div>
+   <div class="section10">
+    <div class="caption10">
+     <center><p>BLISS</p></center>
+   </div>
+     <a href="ayurweda1.html"><img src="ayurweda.jpg" alt="BLISS" title="BLISS" style="width:100%;height:50%;"></img></a>
+     <p>Sri Lanka Ayurvedha - "Rejuvenate with Ayurvedhic medicine" For a mind free of its cankers and a body free of its pains</p>
+   </div>
+  </div>
+  <div class="imgfooter">
+   <div class="new">
+    <div class="topic">
+     <p style="margin-top:0px;">What's New</p>
+    </div>
+    <div class="detail">
+        <a href=""><img src="blogger.jpg" alt="Bloggers" title="Bloggers" style="width:99%;height:50%;"></img></a>
+        <p>Sri Lanka poised as the next island paradise for International bloggers...<a href="" style="padding:1px;background-color:yellow;margin-bottom:1px;"> more>></a></p></div>
+    <div class="detail">
+        <a href=""><img src="FairKolkata.jpg" alt="FairKolkata" title="FairKolkata" style="width:99%;height:50%;"></img></a>
+        <p>Travel and Tourism Fair (TTF) Kolkata inaugurated...<a href="" style="padding:1px;background-color:yellow;margin-bottom:1px;"> more>></a></p></div>
+   </div>
+   <div class="events">
+    <div class="topic">
+     <p style="margin-top:0px;">Up Coming Events</p>
+    </div>
+    <div class="detail">
+        <a href=""><img src="LankaChallenge.png" alt="LankaChallenge" title="LankaChallenge" style="width:99%;height:50%;"></img></a>
+        <p>Lanka Challenge – Southern Route...<a href="" style="padding:1px;background-color:yellow;margin-bottom:1px;"> more>></a></p></div>
+    <div class="detail">
+        <a href=""><img src="nitcsearcc.jpg" alt="nitcsearcc" title="nitcsearcc" style="width:99%;height:50%;"></img></a>
+        <p>SEARCC Conference 2017 In Partnership with NITC in conjunction with IF...<a href="" style="padding:1px;background-color:yellow;margin-bottom:1px;"> more>></a></p></div>
+   </div>
+   </div>
+  <div class="footer">
+   <center><p>&copy All Rights Reserved by BGYN CIS 14/15 Batch.</p></center></div>
+  </div>
+ </div>
+</body>
+</html>

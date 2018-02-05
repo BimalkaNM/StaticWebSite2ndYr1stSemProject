@@ -1,0 +1,208 @@
+<html>
+<head>
+  <meta name="viewport" content="width=deivice-width, initial-scale=1.0">
+  <link href="UTripSrilanka.ico" />
+	<title>U Visit Sri Lanka</title>
+    <link rel="stylesheet" href="linksStyleSheet.css" />
+</head>
+<body>
+ <button onclick="topFunction()" id="myBtn" title="Go to top"><b>Top</b></button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+ <div class="container">
+  <div class="header"> 
+   <div class="logo">
+    <img src="UTripSrilanka.png" alt="logo" style="width:95%;height:150px;">
+   </div>
+   <div class="menubar">
+    <input type="button" value="Home" >
+    <input type="button" value="About Us">
+    <input type="button" value="Contact Us">
+    </div>
+   <div class="searchbar">
+    <h2 style="text-align:center; color:blue;margin:0px;">TOURISM HOTLINE : 1912</h2>
+    <p style="text-align:center;color:red;font-size:25px;margin:10px;"><b>"WE  CARE  ALWAYS..."</b></p>
+    <input type="text" name="search" placeholder="Search.." >(Only dial within Sri lanka)
+   </div>
+  </div>
+  <div class="slideimage">
+   <div class="mySlides">
+    <div class="caption">
+     <b style="margin-top:0px;">Sigiriya</b>
+    </div>
+    <img src="sigiriya.jpg" style="width:100%;height:402px;">
+  </div>
+  <div class="mySlides">
+   <div class="caption">
+     <b style="margin-top:0px;">Temple Of Tooth-Kandy</b>
+   </div>
+    <img src="daladaperahera.jpg" style="width:100%;height:402px;">
+    </div>
+  <div class="mySlides">
+   <div class="caption">
+     <b style="margin-top:0px;">Yala National Park</b>
+   </div>
+    <img src="yalapark.jpg" style="width:100%;height:402px;">
+   </div>
+   <div class="mySlides">
+    <div class="caption">
+     <b style="margin-top:0px;">Arugambe Beach</b>
+    </div>
+    <img src="Arugambay.jpg" style="width:100%;height:402px;">
+   </div>
+  <div class="mySlides">
+    <div class="caption">
+     <b style="margin-top:0px;">Ella Rock</b>
+    </div>
+    <img src="ellarock.jpg" style="width:100%;height:402px;">
+   </div>
+  <div class="mySlides">
+   <div class="caption">
+     <b style="margin-top:0px;">Sri Maha Bodhi-Anuradapura</b>
+   </div>
+    <img src="anuradapura.jpg" style="width:100%;height:400px;">
+   </div>
+   <script>
+   var myIndex = 0;
+   carousel();
+
+   function carousel() {
+     var i;
+     var x = document.getElementsByClassName("mySlides");
+     for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+     }
+     myIndex++;
+     if (myIndex > x.length) {myIndex = 1}    
+     x[myIndex-1].style.display = "block";  
+     setTimeout(carousel, 3500); // Change image every 2 seconds
+    }
+   </script>
+   <div class="socialmediabar">
+    <a href=""><img src="facebook.jpg" alt="facebook" title="facebook" style="width:100%";height:"60px";></a>
+    <a href=""><img src="twitter.jpg" alt="twitter" title="twitter"  style="width:100%";height:"60px";></a>
+    <a href=""><img src="instagram.png" alt="instagram" title="instagram" style="width:100%";height:"60px";></a>
+    <a href=""><img src="youtube.jpg" alt="youtube" title="youtube" style="width:100%";height:"60px";></a>
+    <a href=""><img src="flickr.jpg" alt="flickr" title="flickr" style="width:100%";height:"60px";></a>
+   </div>
+  </div>
+  <div class='nav'>
+  <div class="dropdown">
+   <button class="dropbtn"><b>Explore</b></button>
+    <div class='dropdown-content'>
+     <a href=''>Sri Lankan Legend</a>
+     <a href=''>Sri Lankan Heritage</a>
+     <a href=''>Provincial Tourism</a>
+    </div>
+    </div>
+    <div class="dropdown">
+   <button class="dropbtn"><b>See & Do</b></button>
+    <div class='dropdown-content'>
+     <a href=''>Beach Holidays</a>
+     <a href=''>Adventure Tours</a>
+     <a href=''>Scenic Beauty</a>
+    </div>
+    </div>
+    <div class="dropdown">
+   <button class="dropbtn"><b>Travel Essentials</b></button>
+    <div class='dropdown-content'>
+     <a href=''>Visa Services</a>
+     <a href=''>Plan Your Trip</a>
+     <a href=''>Travel Agencies</a>
+    </div>
+    </div>
+    <div class="dropdown">
+   <button class="dropbtn"><b>Stay</b></button>
+    <div class='dropdown-content'>
+     <a href=''>Hotels & Accomadations</a>
+     <a href=''>Newly Registered</a>
+     <a href=''>National Holiday Resorts</a>
+    </div>
+    </div>
+    <div class="dropdown">
+   <button class="dropbtn"><b>Services</b></button>
+    <div class='dropdown-content'>
+     <a href=''>Online Services</a>
+     <a href=''>Plan Your Trip</a>
+     <a href=''>E-Brochures</a>
+    </div>
+   </div>
+  </div>
+  <div class="section">
+  <div class="navigation"><h4 style="margin-top:5px;margin-left:5px;">You Are Here : Home -> THRILLS -> Unawatuna </h4></div>
+      <h1><marquee hspace="25%">Welcome To Unawatuna </marquee></h1>
+       <div class="map">
+    <div id="mapping" ></div>
+    <script>
+      function initMap() {
+        var unawatuna = {lat: 6.0097, lng:   80.2484};
+        var map = new google.maps.Map(document.getElementById('mapping'), {
+          zoom: 7,
+          center: unawatuna
+        });
+        var marker = new google.maps.Marker({
+          position: unawatuna,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDKUW2LQIkt7tqquYj-90dk6TeGge2X7Y&callback=initMap">
+    </script>
+   </div>
+<p><b>Unawatuna beach,</b> 
+next to Galle on the island’s south coast, is rated one of the best beaches in the world and is famous for its natural beauty and intimacy. Unawatuna was voted <b>
+‘The World’s Best Tropical Beach’</b> 
+by The Discovery Channel, and <b>
+‘Best Beach in the World’</b>
+ by Mark Ellingham, founder of the Rough Guides. No other beach resort in Sri Lanka offers the same combination of golden sand, a protected bay, spectacular sunsets, Sri Lanka’s safest swimming all year round, and a reputation for being hassle free and laid back; all conveniently close to a wide variety of shopping, dining and cultural attractions only 15 minutes away in Galle Fort, Sri Lanka’s Riviera and a UNESCO heritage site. This combination of attractions, unique in Sri Lanka, is just 90 minutes away from Colombo airport. Paradise has never been so accessible.<br>
+ <br>Unawatuna is a coastal village in Galle district of Sri Lanka. Unawatuna is a major tourist attraction and famous for its beautiful beach and corals. Unawatuna beach, a crescent shaped shallow beach situated further south to the famous town of galle and its famous harbour and towering roomassala mountain. It is protected by a natural reef from the open sea and due to the semicircle shape of it forms a perfect natural swimming pool with aquamarine colour gentle waves crashing on the golden sandy beach.Unawatuna Beach was named the world’s best beach by The Discovery Channel in 2004. That may be a stretch today, but Unawatuna is undoubtedly the best beach in Sri Lanka-none other offers the same combination of golden sand, a protected bay that offers.. 
+<img src="unawatuna1.jpg" style="width:80%;height:400px;margin-left:9.5%">
+</p>
+</div>
+  <div class="imgfooter">
+   <div class="new">
+    <div class="topic">
+     <p style="margin-top:0px;">What's New</p>
+    </div>
+    <div class="detail">
+        <a href=""><img src="blogger.jpg" alt="Bloggers" title="Bloggers" style="width:99%;height:50%;"></img></a>
+        <p>Sri Lanka poised as the next island paradise for International bloggers...<a href="" style="padding:1px;background-color:yellow;margin-bottom:1px;"> more>></a></p></div>
+    <div class="detail">
+        <a href=""><img src="FairKolkata.jpg" alt="FairKolkata" title="FairKolkata" style="width:99%;height:50%;"></img></a>
+        <p>Travel and Tourism Fair (TTF) Kolkata inaugurated...<a href="" style="padding:1px;background-color:yellow;margin-bottom:1px;"> more>></a></p></div>
+   </div>
+   <div class="events">
+    <div class="topic">
+     <p style="margin-top:0px;">Up Coming Events</p>
+    </div>
+    <div class="detail">
+        <a href=""><img src="LankaChallenge.png" alt="LankaChallenge" title="LankaChallenge" style="width:99%;height:50%;"></img></a>
+        <p>Lanka Challenge – Southern Route...<a href="" style="padding:1px;background-color:yellow;margin-bottom:1px;"> more>></a></p></div>
+    <div class="detail">
+        <a href=""><img src="nitcsearcc.jpg" alt="nitcsearcc" title="nitcsearcc" style="width:99%;height:50%;"></img></a>
+        <p>SEARCC Conference 2017 In Partnership with NITC in conjunction with IF...<a href="" style="padding:1px;background-color:yellow;margin-bottom:1px;"> more>></a></p></div>
+   </div>
+   </div>
+  <div class="footer">
+   <center><p>&copy All Rights Reserved by BGYN CIS 14/15 Batch.</p></center></div>
+  </div>
+ </div>
+</body>
+</html>
